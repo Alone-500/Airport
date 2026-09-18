@@ -82,7 +82,7 @@ export function Modal({
       >
         <div className="flex items-start gap-4 border-b border-line px-5 py-4 sm:px-6">
           <div className="min-w-0 flex-1">
-            <h2 id={labelId} className="h-3 text-[1.0625rem] sm:text-[1.125rem]">
+            <h2 id={labelId} className="text-h3 text-[1.0625rem] sm:text-[1.125rem]">
               {title}
             </h2>
             {subtitle && <p className="mt-0.5 text-sm text-ink-500">{subtitle}</p>}
@@ -157,7 +157,7 @@ export function Drawer({ open, onClose, title, children, footer, side = 'right',
         style={{ animation: 'fade-up .28s cubic-bezier(.2,.7,.3,1) both' }}
       >
         <div className="flex items-center justify-between border-b border-line px-5 py-4">
-          <h2 className="h-3">{title}</h2>
+          <h2 className="text-h3">{title}</h2>
           <button onClick={onClose} aria-label="Close" className="grid h-9 w-9 place-items-center rounded-full text-ink-500 hover:bg-mist-100">
             <X size={18} />
           </button>

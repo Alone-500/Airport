@@ -175,7 +175,7 @@ export function SectionHeading({
     <div className={cx('flex flex-col gap-4 md:flex-row md:items-end md:justify-between', align === 'center' && 'md:flex-col md:items-center', className)}>
       <div className={cx('max-w-2xl', align === 'center' && 'text-center mx-auto')}>
         {eyebrow && <Eyebrow className="mb-3">{eyebrow}</Eyebrow>}
-        <h2 id={id} className="h-1 text-balance">
+        <h2 id={id} className="text-h1 text-balance">
           {title}
         </h2>
         {lead && <p className={cx('lead mt-3 text-pretty', align === 'center' && 'mx-auto')}>{lead}</p>}
@@ -254,7 +254,7 @@ export function EmptyState({
   return (
     <div className={cx('flex flex-col items-center rounded-card border border-dashed border-ink-200 bg-mist-50/60 px-6 py-14 text-center', className)}>
       <div className="mb-4 grid h-14 w-14 place-items-center rounded-full bg-white text-navy-400 shadow-card">{icon ?? '✈'}</div>
-      <h3 className="h-3">{title}</h3>
+      <h3 className="text-h3">{title}</h3>
       {body && <p className="mt-2 max-w-sm text-sm leading-relaxed text-ink-500">{body}</p>}
       {action && <div className="mt-5">{action}</div>}
     </div>
