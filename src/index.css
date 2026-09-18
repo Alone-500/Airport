@@ -66,13 +66,13 @@
   .h-hero {
     @apply font-display text-[clamp(2.4rem,6.6vw,5rem)] font-semibold leading-[0.98] tracking-[-0.03em];
   }
-  .h-1 {
+  .text-h1 {
     @apply font-display text-[clamp(1.9rem,4vw,3.1rem)] font-semibold leading-[1.06] tracking-[-0.028em];
   }
-  .h-2 {
+  .text-h2 {
     @apply font-display text-[clamp(1.45rem,2.6vw,2.1rem)] font-semibold leading-[1.14] tracking-[-0.022em];
   }
-  .h-3 {
+  .text-h3 {
     @apply font-display text-[1.0625rem] font-semibold leading-snug tracking-[-0.012em];
   }
   .lead {
