@@ -266,7 +266,7 @@ export function PassengerDetails({
       })}
 
       <div className="rounded-card border border-line bg-white p-4 sm:p-5">
-        <h3 className="h-3">Contact details</h3>
+        <h3 className="text-h3">Contact details</h3>
         <p className="mt-1 text-[.8125rem] text-ink-500">We use these for gate changes, bag updates and your e-ticket. SMS is only used if a flight is disrupted.</p>
         <div className="mt-4 grid gap-3.5 sm:grid-cols-3">
           <Field label="Email address" required error={errors.__contact?.email} className="sm:col-span-2">
