@@ -189,7 +189,7 @@ export default function Payment() {
             })}
 
             <div className="card p-4 sm:p-5">
-              <p className="h-3 text-[1rem]">Split & fallback rules</p>
+              <p className="text-h3 text-[1rem]">Split & fallback rules</p>
               <p className="mt-1 text-[.875rem] text-ink-500">When you pay, we apply these in order. Points and wallet credit always come first because they expire; the card picks up the rest.</p>
               <div className="mt-4 space-y-2.5">
                 <Checkbox label="Spend travel wallet credit before any card" desc={`USD ${wallet.reduce((s, w) => s + w.amount, 0).toFixed(2)} available · oldest expiry first`} checked={split.wallet} onChange={(v) => setSplit({ ...split, wallet: v })} />
