@@ -126,7 +126,7 @@ export function Footer() {
         <div className="shell grid items-center gap-8 py-12 lg:grid-cols-[1.1fr_1fr] lg:py-14">
           <div>
             <p className="eyebrow text-teal-300">Horizons — the AeroNova dispatch</p>
-            <h2 className="h-2 mt-3 text-white">Route news, fare windows and the things worth doing when you land.</h2>
+            <h2 className="text-h2 mt-3 text-white">Route news, fare windows and the things worth doing when you land.</h2>
             <p className="mt-3 max-w-xl text-[.9375rem] leading-relaxed text-white/60">
               One email a week, written by the people who build the schedule. No flash sales pretending to expire, no hotel upsells, and you can change your regions in one click.
             </p>
