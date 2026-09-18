@@ -199,7 +199,7 @@ export default function DestinationDetail() {
             <div className="mt-7 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
               <div className="card p-5">
                 <div className="flex flex-wrap items-end justify-between gap-4">
-                  <p className="h-3 text-[1.0625rem]">Temperature &amp; rain</p>
+                  <p className="text-h3 text-[1.0625rem]">Temperature &amp; rain</p>
                   <p className="text-[.75rem] text-ink-400">°C high / low · mm rain per month</p>
                 </div>
                 <div className="mt-5 flex h-56 items-end gap-2">

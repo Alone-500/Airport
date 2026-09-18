@@ -263,7 +263,7 @@ function DestinationsBento() {
           <div className="relative grid gap-8 lg:grid-cols-[minmax(0,340px)_1fr] lg:items-center">
             <div>
               <Eyebrow>The network</Eyebrow>
-              <h3 className="h-2 mt-3">Three hubs, one clock.</h3>
+              <h3 className="text-h2 mt-3">Three hubs, one clock.</h3>
               <p className="lead mt-3 text-[.9375rem]">
                 Accra for the West, Nairobi for the East, Johannesburg for the south. Long-haul departs in the evening banks so you land at the start of a working day, not the end of one.
               </p>
@@ -352,7 +352,7 @@ function WhyFly() {
       <div className="shell relative grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-16">
         <div>
           <p className="eyebrow text-teal-300">Why fly with AeroNova</p>
-          <h2 className="h-1 mt-4 text-white">
+          <h2 className="text-h1 mt-4 text-white">
             We publish the numbers
             <br />
             other airlines hide.
@@ -452,7 +452,7 @@ function Cabins() {
 
           <div className="relative">
             <div className="card p-6">
-              <h3 className="h-3">Inside {data.name}</h3>
+              <h3 className="text-h3">Inside {data.name}</h3>
               <dl className="mt-4 space-y-3">
                 {data.specs.map(([k, v]) => (
                   <div key={k} className="flex items-baseline justify-between gap-4 border-b border-line pb-2.5">
@@ -509,7 +509,7 @@ function Loyalty() {
           <div className="relative grid gap-10 p-6 sm:p-10 lg:grid-cols-[1.05fr_1fr] lg:p-12">
             <div>
               <p className="eyebrow text-gold-400">AeroNova Rewards</p>
-              <h2 className="h-1 mt-3 text-white">
+              <h2 className="text-h1 mt-3 text-white">
                 Points that do not
                 <br />
                 expire out of spite.
@@ -641,7 +641,7 @@ function AirportInfo() {
       <div className="shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)]">
         <div>
           <Eyebrow>Airport information</Eyebrow>
-          <h2 className="h-2 mt-3">Know where to stand before you leave home.</h2>
+          <h2 className="text-h2 mt-3">Know where to stand before you leave home.</h2>
           <p className="lead mt-3">Counter rows, real security times, the fastest door in each terminal, and the lounge nobody finds on the first visit.</p>
           <ul className="mt-7 space-y-3">
             {[
@@ -745,7 +745,7 @@ function AppPromo() {
       <div className="shell relative grid items-center gap-12 lg:grid-cols-[1fr_minmax(0,420px)]">
         <div>
           <Eyebrow>The AeroNova app</Eyebrow>
-          <h2 className="h-1 mt-3">Everything except the turbulence.</h2>
+          <h2 className="text-h1 mt-3">Everything except the turbulence.</h2>
           <p className="lead mt-4 max-w-xl">
             Book, check in, pick a seat, pay for the bag you pretend you will not over-pack, and land without asking anyone for a paper copy of anything.
           </p>
@@ -860,7 +860,7 @@ function QuickDealsRow() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <Eyebrow>Live fare drops</Eyebrow>
-            <h2 className="h-2 mt-2">Six routes that got cheaper this week.</h2>
+            <h2 className="text-h2 mt-2">Six routes that got cheaper this week.</h2>
           </div>
           <Link to="/offers" className="text-[.875rem] font-semibold text-navy-800 underline decoration-line underline-offset-4 hover:decoration-sky-500">
             All offers
@@ -952,7 +952,7 @@ export default function Home() {
         <div className="shell grid gap-6 lg:grid-cols-[minmax(0,300px)_1fr] lg:items-center">
           <div>
             <p className="eyebrow text-teal-300">Try it now</p>
-            <h2 className="h-2 mt-2 text-white">See the results page, without searching.</h2>
+            <h2 className="text-h2 mt-2 text-white">See the results page, without searching.</h2>
             <p className="mt-3 text-[.9375rem] leading-relaxed text-white/65">These are real itineraries from the same engine that powers the search. Select one and the whole booking flow follows.</p>
             <Button variant="onDark" size="sm" className="mt-5" onClick={() => nav(`/search?from=${q.legs[0].from}&to=${q.legs[0].to}&dep=${q.legs[0].date}&pax=1,0,0&cabin=ECONOMY&trip=round`)}>
               Open live results
@@ -981,7 +981,7 @@ export default function Home() {
         <div className="shell grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <Eyebrow>Before you fly</Eyebrow>
-            <h2 className="h-2 mt-2">The answers people call us about most.</h2>
+            <h2 className="text-h2 mt-2">The answers people call us about most.</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {TRAVEL_SECTIONS.slice(0, 6).map((s, i) => (
                 <Link key={s.id} to={`/travel-information/${s.id}`} className={cx('group flex items-start gap-3 rounded-[14px] border border-line p-4 transition hover:border-sky-300 hover:bg-sky-50/40', i % 2 === 1 && 'sm:translate-y-3')}>

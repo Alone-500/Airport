@@ -121,7 +121,7 @@ export default function Loyalty() {
           <div className="mt-10 grid gap-6 rounded-card border border-line bg-white p-5 sm:p-7 lg:grid-cols-[1.2fr_1fr]">
             <div>
               <Eyebrow>Points calculator</Eyebrow>
-              <h3 className="h-2 mt-2 text-[1.5rem]">What would you earn this year?</h3>
+              <h3 className="text-h2 mt-2 text-[1.5rem]">What would you earn this year?</h3>
               <p className="mt-2 text-[.9375rem] leading-relaxed text-ink-600">Based on published earning rates. Tier bonuses are added at the end of the qualification year, not per flight.</p>
               <div className="mt-6 grid gap-5 sm:grid-cols-2">
                 <label className="block">

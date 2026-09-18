@@ -212,7 +212,7 @@ export default function Fleet() {
               </div>
               <div className="space-y-4">
                 <div className="card p-5">
-                  <p className="h-3 text-[1rem]">Fleet technical readout</p>
+                  <p className="text-h3 text-[1rem]">Fleet technical readout</p>
                   <dl className="mt-3 space-y-2 text-[.875rem]">
                     {[
                       ['Dispatch reliability', '99.6%'],
@@ -247,7 +247,7 @@ export default function Fleet() {
             <div className="grid gap-5 lg:grid-cols-3">
               <div className="card overflow-hidden lg:col-span-2">
                 <div className="border-b border-line px-5 py-4">
-                  <p className="h-3 text-[1.0625rem]">Where every aircraft is right now</p>
+                  <p className="text-h3 text-[1.0625rem]">Where every aircraft is right now</p>
                   <p className="mt-1 text-[.8125rem] text-ink-500">Live from the operations control feed · {toISODate(new Date())}</p>
                 </div>
                 <table className="table-base">
@@ -422,7 +422,7 @@ export function FleetDetail() {
 
           <aside className="space-y-4">
             <div className="card p-5">
-              <p className="h-3 text-[1rem]">On this type today</p>
+              <p className="text-h3 text-[1rem]">On this type today</p>
               {board.length === 0 ? (
                 <p className="mt-3 text-[.8125rem] text-ink-500">No scheduled sectors on this type today — it is on a maintenance window or the overnight bank.</p>
               ) : (
@@ -442,7 +442,7 @@ export function FleetDetail() {
               )}
             </div>
             <div className="card p-5">
-              <p className="h-3 text-[1rem]">Why we bought it</p>
+              <p className="text-h3 text-[1rem]">Why we bought it</p>
               <ul className="mt-3 space-y-2">
                 {f.features.map((x) => (
                   <li key={x} className="flex gap-2.5 text-[.875rem] leading-relaxed text-ink-600">

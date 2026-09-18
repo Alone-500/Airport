@@ -227,7 +227,7 @@ export default function Destinations() {
         <div className="shell relative grid gap-10 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-center">
           <div>
             <p className="eyebrow text-teal-300">Route planning</p>
-            <h2 className="h-1 mt-3 text-white">Where should we fly next?</h2>
+            <h2 className="text-h1 mt-3 text-white">Where should we fly next?</h2>
             <p className="mt-4 max-w-xl text-[1rem] leading-relaxed text-white/70">
               Two of our last five routes exist because passengers asked for them in the app. If you fly a corridor regularly, tell us — we publish the shortlist we are modelling every quarter.
             </p>
@@ -263,7 +263,7 @@ export default function Destinations() {
           <div className="w-full max-w-5xl rounded-card bg-white p-5 shadow-lift" onClick={(e) => e.stopPropagation()}>
             <div className="mb-3 flex items-center justify-between gap-4">
               <div>
-                <h2 className="h-3">AeroNova network</h2>
+                <h2 className="text-h3">AeroNova network</h2>
                 <p className="text-[.8125rem] text-ink-500">41 destinations · hubs at Accra, Nairobi and Johannesburg</p>
               </div>
               <Button size="sm" variant="secondary" onClick={() => setMapOpen(false)}>

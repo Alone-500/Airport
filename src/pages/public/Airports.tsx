@@ -274,7 +274,7 @@ export function AirportDetail() {
                   </ul>
                 </div>
                 <div className="card p-5">
-                  <p className="h-3 text-[1.0625rem]">Immigration & customs</p>
+                  <p className="text-h3 text-[1.0625rem]">Immigration & customs</p>
                   <p className="mt-2 text-[.9375rem] leading-relaxed text-ink-600">
                     {a.hub ? 'AeroNova passengers use the dedicated row at the end of the hall; median wait 9 minutes on a 06:00 arrival. ' : 'The hall is small; the wait is usually under the time it takes to get your bag. '}
                     All arriving passengers complete the digital declaration up to 72 hours before landing — the link is in your app trip.
@@ -314,7 +314,7 @@ export function AirportDetail() {
                   </p>
                 </div>
                 <div className="card p-5">
-                  <p className="h-3 text-[1.0625rem]">While you wait</p>
+                  <p className="text-h3 text-[1.0625rem]">While you wait</p>
                   <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                     {a.facilities.map((f) => (
                       <li key={f} className="flex items-center gap-2.5 text-[.875rem] text-ink-600">

@@ -103,7 +103,7 @@ export default function CabinPage() {
               <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
                 <div className="card overflow-hidden">
                   <div className="border-b border-line px-5 py-4">
-                    <p className="h-3 text-[1.0625rem]">The seat, measured</p>
+                    <p className="text-h3 text-[1.0625rem]">The seat, measured</p>
                   </div>
                   <ul className="divide-y divide-line">
                     {c.specs.map((s) => (
@@ -117,7 +117,7 @@ export default function CabinPage() {
                 </div>
                 <div className="space-y-4">
                   <div className="card p-5">
-                    <p className="h-3 text-[1rem]">Included</p>
+                    <p className="text-h3 text-[1rem]">Included</p>
                     <ul className="mt-3 space-y-2">
                       {c.includes.map((x) => (
                         <li key={x} className="flex gap-2.5 text-[.875rem] leading-snug text-ink-600">
@@ -127,7 +127,7 @@ export default function CabinPage() {
                     </ul>
                   </div>
                   <div className="card p-5">
-                    <p className="h-3 text-[1rem]">Not included</p>
+                    <p className="text-h3 text-[1rem]">Not included</p>
                     <ul className="mt-3 space-y-2">
                       {c.excludes.map((x) => (
                         <li key={x} className="flex gap-2.5 text-[.875rem] leading-snug text-ink-500">
@@ -210,7 +210,7 @@ export default function CabinPage() {
                 </div>
               ))}
               <div className="card p-5 sm:col-span-3 lg:col-span-3">
-                <p className="h-3 text-[1.0625rem]">Fare families for {c.name}</p>
+                <p className="text-h3 text-[1.0625rem]">Fare families for {c.name}</p>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                   {fares.map((f) => (
                     <div key={f.id} className="rounded-[14px] border border-line p-4">

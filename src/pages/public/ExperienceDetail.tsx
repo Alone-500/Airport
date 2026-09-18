@@ -67,7 +67,7 @@ export default function ExperienceDetail() {
 
           <aside className="space-y-4 lg:sticky lg:top-[calc(var(--nav)+16px)] lg:self-start">
             <div className="card p-5">
-              <p className="h-3 text-[1rem]">The detail</p>
+              <p className="text-h3 text-[1rem]">The detail</p>
               <dl className="mt-4 space-y-2.5">
                 {e.facts.map(([k, v]) => (
                   <div key={k} className="flex items-baseline justify-between gap-4 border-b border-line pb-2 last:border-0">
@@ -79,7 +79,7 @@ export default function ExperienceDetail() {
             </div>
             {e.access && (
               <div className="card p-5">
-                <p className="h-3 text-[1rem]">Who gets in</p>
+                <p className="text-h3 text-[1rem]">Who gets in</p>
                 <ul className="mt-3 space-y-2.5">
                   {e.access.map((a) => (
                     <li key={a.who} className="border-l-2 border-teal-500 pl-3">

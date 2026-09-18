@@ -286,7 +286,7 @@ export default function Booking() {
 
               <div className="card overflow-hidden">
                 <div className="flex items-center justify-between gap-3 border-b border-line px-5 py-4">
-                  <p className="h-3">Choose your fare</p>
+                  <p className="text-h3">Choose your fare</p>
                   <button className="text-[.8125rem] font-semibold text-sky-700 hover:underline" onClick={() => nav('/travel-information/baggage')}>
                     Fare rules
                   </button>
@@ -541,7 +541,7 @@ export default function Booking() {
               <div className="card divide-y divide-line">
                 <div className="p-4 sm:p-5">
                   <div className="flex items-center justify-between gap-3">
-                    <p className="h-3">Flights</p>
+                    <p className="text-h3">Flights</p>
                     <button onClick={() => setStep(1)} className="text-[.8125rem] font-semibold text-sky-700 hover:underline">
                       Change
                     </button>
@@ -571,7 +571,7 @@ export default function Booking() {
 
                 <div className="p-4 sm:p-5">
                   <div className="flex items-center justify-between gap-3">
-                    <p className="h-3">Travellers</p>
+                    <p className="text-h3">Travellers</p>
                     <button onClick={() => setStep(2)} className="text-[.8125rem] font-semibold text-sky-700 hover:underline">
                       Change
                     </button>
@@ -600,7 +600,7 @@ export default function Booking() {
 
                 <div className="p-4 sm:p-5">
                   <div className="flex items-center justify-between gap-3">
-                    <p className="h-3">Services</p>
+                    <p className="text-h3">Services</p>
                     <div className="flex gap-3">
                       <button onClick={() => setStep(4)} className="text-[.8125rem] font-semibold text-sky-700 hover:underline">
                         Bags
@@ -626,7 +626,7 @@ export default function Booking() {
               </div>
 
               <div className="card p-4 sm:p-5">
-                <p className="h-3">Price breakdown</p>
+                <p className="text-h3">Price breakdown</p>
                 <div className="mt-2">
                   {priceLine(`Base fare · ${paxCount} × ${fareMeta.name}`, base, 'outbound' + (inbound ? ' + return' : ''))}
                   {bagTotal > 0 && priceLine('Baggage', bagTotal)}

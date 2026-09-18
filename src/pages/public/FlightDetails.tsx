@@ -92,7 +92,7 @@ export default function FlightDetails() {
         <div className="space-y-6">
           {/* timeline */}
           <section className="card p-5">
-            <h2 className="h-3">Flight timeline</h2>
+            <h2 className="text-h3">Flight timeline</h2>
             <ol className="mt-5">
               {timeline.map((t, i) => (
                 <li key={i} className="relative flex gap-4 pb-5 last:pb-0">
@@ -130,7 +130,7 @@ export default function FlightDetails() {
             <Photo src={aircraft.img} alt={aircraft.name} seed={aircraft.id} className="min-h-[190px]" />
             <div className="p-5">
               <p className="eyebrow">Aircraft</p>
-              <h2 className="h-3 mt-2 text-[1.25rem]">
+              <h2 className="text-h3 mt-2 text-[1.25rem]">
                 {first.aircraft} · {origin?.hub ? 'hub rotation' : 'scheduled inbound'}
               </h2>
               <p className="mt-2 text-[.875rem] leading-relaxed text-ink-600">{aircraft.notes}</p>
@@ -168,7 +168,7 @@ export default function FlightDetails() {
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
                 <p className="eyebrow">Seat availability</p>
-                <h2 className="h-3 mt-2 text-[1.25rem]">{CABIN_LABEL(cabin)} · {freeSeats} seats free at no charge</h2>
+                <h2 className="text-h3 mt-2 text-[1.25rem]">{CABIN_LABEL(cabin)} · {freeSeats} seats free at no charge</h2>
               </div>
               <p className="text-[.8125rem] text-ink-500">
                 {exitSeats} exit-row seats · {seats.reduce((n, r) => n + r.seats.filter((s) => s.state === 'occupied').length, 0)} taken
@@ -200,7 +200,7 @@ export default function FlightDetails() {
 
           {/* included services */}
           <section className="card p-5">
-            <h2 className="h-3">What is on board</h2>
+            <h2 className="text-h3">What is on board</h2>
             <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 { icon: <Utensils size={16} />, t: 'Dining', d: fareById('CLASSIC').meals },

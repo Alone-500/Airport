@@ -124,7 +124,7 @@ export default function Newsroom() {
 
           <aside className="space-y-4">
             <div className="card p-4">
-              <p className="h-3 text-[1rem]">Contacts</p>
+              <p className="text-h3 text-[1rem]">Contacts</p>
               <ul className="mt-3 space-y-3">
                 {[
                   { n: 'Efua Ansah', r: 'Group Head of Communications', e: 'press@aeronova.aero' },
@@ -142,7 +142,7 @@ export default function Newsroom() {
               </ul>
             </div>
             <div className="card p-4">
-              <p className="h-3 text-[1rem]">Next dates</p>
+              <p className="text-h3 text-[1rem]">Next dates</p>
               <ul className="mt-3 space-y-2">
                 {CALENDAR.map((c) => (
                   <li key={c.date} className="flex items-start gap-3 border-b border-line pb-2 last:border-0">
@@ -156,7 +156,7 @@ export default function Newsroom() {
               </ul>
             </div>
             <div className="card p-4">
-              <p className="h-3 text-[1rem]">Latest results</p>
+              <p className="text-h3 text-[1rem]">Latest results</p>
               <ul className="mt-3 space-y-2">
                 {INVESTOR.slice(0, 4).map((r) => (
                   <li key={r.label} className="flex items-baseline justify-between gap-3 border-b border-line pb-1.5 text-[.8125rem] last:border-0">

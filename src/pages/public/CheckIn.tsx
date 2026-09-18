@@ -260,7 +260,7 @@ export default function CheckIn() {
               </div>
 
               <div className="card p-4 sm:p-5">
-                <p className="h-3 text-[1.125rem]">Choose your seats</p>
+                <p className="text-h3 text-[1.125rem]">Choose your seats</p>
                 <p className="mt-1 text-[.875rem] text-ink-500">Free on {fare.name} from this screen. Exit rows stay priced, and we will not let anyone under 15 sit in one.</p>
                 <SeatMap
                   className="mt-4"
@@ -284,7 +284,7 @@ export default function CheckIn() {
           {step === 2 && (
             <>
               <div className="card p-4 sm:p-5">
-                <p className="h-3 text-[1.125rem]">Bags</p>
+                <p className="text-h3 text-[1.125rem]">Bags</p>
                 <p className="mt-1 text-[.875rem] text-ink-500">Your {fare.name} allowance is {fare.checkedBags ? `${fare.checkedBags} × ${fare.bagKg} kg` : 'no checked bag'}. Over-packing now is cheaper than at the counter.</p>
                 <ul className="mt-4 divide-y divide-line">
                   {b.passengers
@@ -324,7 +324,7 @@ export default function CheckIn() {
               </div>
 
               <div className="card p-4 sm:p-5">
-                <p className="h-3 text-[1.125rem]">Travel document declaration</p>
+                <p className="text-h3 text-[1.125rem]">Travel document declaration</p>
                 <p className="mt-1 text-[.875rem] text-ink-500">Required for international sectors. Confirm each traveller’s document is valid for the destination — we check again at the gate.</p>
                 <ul className="mt-4 space-y-2.5">
                   {b.passengers

@@ -231,7 +231,7 @@ export default function ManageBooking() {
               ))}
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="card p-4">
-                  <p className="h-3 text-[1rem]">What is included</p>
+                  <p className="text-h3 text-[1rem]">What is included</p>
                   <ul className="mt-3 space-y-2 text-[.875rem]">
                     {[fare.cabinBag, fare.checkedBags ? `${fare.checkedBags} × ${fare.bagKg} kg checked` : 'No checked bag', fare.seatSelection, fare.meals, fare.wifi, fare.boarding].map((x) => (
                       <li key={x} className="flex items-start gap-2 text-ink-600">
@@ -241,7 +241,7 @@ export default function ManageBooking() {
                   </ul>
                 </div>
                 <div className="card p-4">
-                  <p className="h-3 text-[1rem]">Quick actions</p>
+                  <p className="text-h3 text-[1rem]">Quick actions</p>
                   <div className="mt-3 grid gap-2">
                     {[
                       { l: 'Add a checked bag', to: '', act: () => setTab('bags') },
@@ -261,7 +261,7 @@ export default function ManageBooking() {
               </div>
               {live.checkedIn && (
                 <div className="space-y-4">
-                  <p className="h-3">Boarding passes</p>
+                  <p className="text-h3">Boarding passes</p>
                   {live.passengers.map((_, i) => (
                     <BoardingPass key={i} booking={live} paxIndex={i} />
                   ))}
@@ -377,7 +377,7 @@ export default function ManageBooking() {
           {tab === 'bags' && (
             <div className="space-y-4">
               <div className="card p-4 sm:p-5">
-                <p className="h-3 text-[1.125rem]">Baggage & extras</p>
+                <p className="text-h3 text-[1.125rem]">Baggage & extras</p>
                 <p className="mt-1 text-[.875rem] text-ink-500">Everything here is priced 35% below the airport counter, and closes 3 hours before departure.</p>
                 <BaggagePicker
                   bags={live.services.bags.map((b) => b.id)}
