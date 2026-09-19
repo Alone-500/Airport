@@ -5,6 +5,7 @@ import { ToastViewport } from './components/ui/Toaster';
 import { PublicLayout } from './components/layout/PublicLayout';
 import Home from './pages/public/Home';
 import { RouteSkeleton } from './components/ui/RouteSkeleton';
+import { ErrorBoundary } from './components/ui/ErrorBoundary';
 
 const Search = lazy(() => import('./pages/public/Search'));
 const FlightDetails = lazy(() => import('./pages/public/FlightDetails'));
@@ -49,6 +50,7 @@ const AdminApp = lazy(() => import('./pages/admin/AdminApp'));
 export default function App() {
   return (
     <StoreProvider>
+      <ErrorBoundary>
       <Suspense fallback={<RouteSkeleton />}>
         <Routes>
           <Route element={<PublicLayout />}>
@@ -103,6 +105,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
+      </ErrorBoundary>
       <ToastViewport />
     </StoreProvider>
   );
